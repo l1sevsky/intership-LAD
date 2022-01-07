@@ -1,0 +1,226 @@
+* {
+	font-family: Consolas;
+}
+
+h2 {
+	display: inline-block;
+	margin: 10px 0;
+	padding: 5px 10px;
+	font-size: 36px;
+	font-weight: 800;
+	letter-spacing: 0.3em;
+	text-align: center;
+	border-radius: 15px;
+}
+
+p {
+	margin: 10px 0;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 0.2em;
+}
+
+label {
+	margin-top: 10px;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+}
+
+input {
+	margin: 10px 0;
+	padding: 5px 10px;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 0.2em;
+	border: 2px solid rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+}
+
+button {
+	margin: 10px 0;
+	padding: 5px 20px;
+	font-size: 24px;
+	font-weight: 800;
+	letter-spacing: 0.3em;
+	border: 2px solid rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+img {
+	width: 100px;
+	margin: 10px;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-around;
+	align-items: start;
+	margin: 50px;
+}
+
+.game {
+	width: 500px;
+	padding: 20px;
+	border-radius: 20px;
+	box-shadow: 6px 6px 20px -5px rgba(0, 0, 0, 0.3);
+}
+
+.params {
+	display: flex;
+	flex-direction: column;
+}
+
+.game-field {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+
+.error {
+	margin: 10px 0;
+	font-size: 22px;
+	font-weight: 800;
+	color: tomato;
+}
+
+.game-1 {
+	color: #5f8dd2;
+	background: linear-gradient(rgba(253, 253, 253, 1),
+								rgba(209, 255, 233, 0.4));
+	border: 5px solid rgba(107, 231, 193, 0.3);
+}
+
+.game-1 h2,
+.game-1 button {
+	color: #5a96f0;
+	background: linear-gradient(rgba(151, 191, 252, 0.2), 
+								rgba(120, 248, 148, 0.2));
+	box-shadow: 2px 2px 0 0 rgba(49, 209, 200, 0.2);
+}
+
+.game-2 {
+	color: #dc8c5f;
+	background: linear-gradient(rgba(255, 255, 255, 1),
+								rgba(251, 238, 213, 0.4));
+	border: 5px solid rgba(244, 143, 111, 0.3);
+}
+
+.game-2 h2,
+.game-2 button {
+	color: #f5965f;
+	background: linear-gradient(rgba(252, 199, 151, 0.2), 
+								rgba(230, 248, 120, 0.2));
+	box-shadow: 2px 2px 0 0 rgba(232, 186, 69, 0.2);
+}
+
+.battle-field {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.attack-info {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-size: 14px;
+	font-weight: 800;
+	letter-spacing: 0;
+	text-align: left;
+}
+
+.attack-info #monster-attack-info,
+.attack-info #wizard-attack-info {
+	position: relative;
+	width: 170px;
+	min-height: 70px;
+	padding: 10px;
+	padding-top: 40px;
+	color: #000;
+	border-radius: 10px;
+}
+
+.attack-info #monster-attack-info {
+	border: 3px solid salmon;
+}
+
+.attack-info #monster-attack-info::before {
+	content: "Прием противника:";
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	font-size: 16px;
+	font-weight: 900;
+	letter-spacing: 0;
+	color: #000;
+}
+
+.attack-info #wizard-attack-info {
+	border: 3px solid springgreen;
+}
+
+.attack-info #wizard-attack-info::before {
+	content: "Ваш прием:";
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	font-size: 16px;
+	font-weight: 900;
+	letter-spacing: 0;
+	color: #000;
+}
+
+.attack-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.attack-btn {
+	width: 230px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0;
+	text-align: left;
+}
+
+.attack-btn:disabled {
+	background: #bbb;
+	color: #333;
+	cursor: default;
+}
+
+.fight-title {
+	padding: 20px;
+	font-size: 40px;
+	font-weight: 900;
+	letter-spacing: 0.3em;
+	text-align: center;
+	color: #000;
+}
+
+.update {
+	font-size: 40px;
+	font-weight: 900;
+	color: red;
+}
+
+.defeat {
+	width: 210px;
+	opacity: 0.7;
+	transform: rotate(60deg);
+}
+
+.win {
+	width: 210px;
+}
+
+.hidden {
+	display: none;
+}
